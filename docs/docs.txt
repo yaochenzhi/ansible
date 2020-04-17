@@ -1,0 +1,5 @@
+https://docs.ansible.com/ansible/latest/user_guide/index.html
+
+https://ansible-tran.readthedocs.io/en/latest/docs/modules.html
+
+https://www.jianshu.com/p/b63780368281

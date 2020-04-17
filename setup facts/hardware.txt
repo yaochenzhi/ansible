@@ -1,0 +1,340 @@
+vm1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_architecture": "x86_64",
+        "ansible_bios_date": "07/29/2019",
+        "ansible_bios_version": "6.00",
+        "ansible_device_links": {
+            "ids": {
+                "dm-0": [
+                    "dm-name-centos-root",
+                    "dm-uuid-LVM-qh8eBIaCDJXbLPH0grQIzdthcQESmbUFxDW41cISJj8q7aw2A0rVMNTWelx3q1YL"
+                ],
+                "dm-1": [
+                    "dm-name-centos-swap",
+                    "dm-uuid-LVM-qh8eBIaCDJXbLPH0grQIzdthcQESmbUFlCFmB3oOKCH9NR00Qv0kIS96duFXMIUj"
+                ],
+                "sda2": [
+                    "lvm-pv-uuid-swi7nj-Mu2M-WyGe-NlLc-3LeK-37NC-o08vOG"
+                ],
+                "sda3": [
+                    "lvm-pv-uuid-C1Mck3-fbit-k0UB-63JP-Vjlu-Hi3P-1mGc7W"
+                ],
+                "sr0": [
+                    "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                ]
+            },
+            "labels": {},
+            "masters": {
+                "sda2": [
+                    "dm-0",
+                    "dm-1"
+                ],
+                "sda3": [
+                    "dm-0"
+                ]
+            },
+            "uuids": {
+                "dm-0": [
+                    "b884f87b-27e4-4a41-8e1e-6dbebdd4359f"
+                ],
+                "dm-1": [
+                    "116a7aea-b6c1-4c21-8302-eccc788a4730"
+                ],
+                "sda1": [
+                    "cdea19ea-b907-44c8-a488-5b5a05ddebde"
+                ]
+            }
+        },
+        "ansible_devices": {
+            "dm-0": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [
+                        "dm-name-centos-root",
+                        "dm-uuid-LVM-qh8eBIaCDJXbLPH0grQIzdthcQESmbUFxDW41cISJj8q7aw2A0rVMNTWelx3q1YL"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "b884f87b-27e4-4a41-8e1e-6dbebdd4359f"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "77578240",
+                "sectorsize": "512",
+                "size": "36.99 GB",
+                "support_discard": "0",
+                "vendor": null,
+                "virtual": 1
+            },
+            "dm-1": {
+                "holders": [],
+                "host": "",
+                "links": {
+                    "ids": [
+                        "dm-name-centos-swap",
+                        "dm-uuid-LVM-qh8eBIaCDJXbLPH0grQIzdthcQESmbUFlCFmB3oOKCH9NR00Qv0kIS96duFXMIUj"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": [
+                        "116a7aea-b6c1-4c21-8302-eccc788a4730"
+                    ]
+                },
+                "model": null,
+                "partitions": {},
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "",
+                "sectors": "4194304",
+                "sectorsize": "512",
+                "size": "2.00 GB",
+                "support_discard": "0",
+                "vendor": null,
+                "virtual": 1
+            },
+            "sda": {
+                "holders": [],
+                "host": "SCSI storage controller: LSI Logic / Symbios Logic 53c1030 PCI-X Fusion-MPT Dual Ultra320 SCSI (rev 01)",
+                "links": {
+                    "ids": [],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VMware Virtual S",
+                "partitions": {
+                    "sda1": {
+                        "holders": [],
+                        "links": {
+                            "ids": [],
+                            "labels": [],
+                            "masters": [],
+                            "uuids": [
+                                "cdea19ea-b907-44c8-a488-5b5a05ddebde"
+                            ]
+                        },
+                        "sectors": "2097152",
+                        "sectorsize": 512,
+                        "size": "1.00 GB",
+                        "start": "2048",
+                        "uuid": "cdea19ea-b907-44c8-a488-5b5a05ddebde"
+                    },
+                    "sda2": {
+                        "holders": [
+                            "centos-root",
+                            "centos-swap"
+                        ],
+                        "links": {
+                            "ids": [
+                                "lvm-pv-uuid-swi7nj-Mu2M-WyGe-NlLc-3LeK-37NC-o08vOG"
+                            ],
+                            "labels": [],
+                            "masters": [
+                                "dm-0",
+                                "dm-1"
+                            ],
+                            "uuids": []
+                        },
+                        "sectors": "39843840",
+                        "sectorsize": 512,
+                        "size": "19.00 GB",
+                        "start": "2099200",
+                        "uuid": null
+                    },
+                    "sda3": {
+                        "holders": [
+                            "centos-root"
+                        ],
+                        "links": {
+                            "ids": [
+                                "lvm-pv-uuid-C1Mck3-fbit-k0UB-63JP-Vjlu-Hi3P-1mGc7W"
+                            ],
+                            "labels": [],
+                            "masters": [
+                                "dm-0"
+                            ],
+                            "uuids": []
+                        },
+                        "sectors": "41943040",
+                        "sectorsize": 512,
+                        "size": "20.00 GB",
+                        "start": "41943040",
+                        "uuid": null
+                    }
+                },
+                "removable": "0",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "deadline",
+                "sectors": "83886080",
+                "sectorsize": "512",
+                "size": "40.00 GB",
+                "support_discard": "0",
+                "vendor": "VMware,",
+                "virtual": 1
+            },
+            "sr0": {
+                "holders": [],
+                "host": "IDE interface: Intel Corporation 82371AB/EB/MB PIIX4 IDE (rev 01)",
+                "links": {
+                    "ids": [
+                        "ata-VMware_Virtual_IDE_CDROM_Drive_10000000000000000001"
+                    ],
+                    "labels": [],
+                    "masters": [],
+                    "uuids": []
+                },
+                "model": "VMware IDE CDR10",
+                "partitions": {},
+                "removable": "1",
+                "rotational": "1",
+                "sas_address": null,
+                "sas_device_handle": null,
+                "scheduler_mode": "deadline",
+                "sectors": "2097151",
+                "sectorsize": "512",
+                "size": "1024.00 MB",
+                "support_discard": "0",
+                "vendor": "NECVMWar",
+                "virtual": 1
+            }
+        },
+        "ansible_domain": "",
+        "ansible_form_factor": "Other",
+        "ansible_fqdn": "vm1",
+        "ansible_hostname": "vm1",
+        "ansible_kernel": "3.10.0-862.el7.x86_64",
+        "ansible_kernel_version": "#1 SMP Fri Apr 20 16:44:24 UTC 2018",
+        "ansible_lvm": {
+            "lvs": {
+                "root": {
+                    "size_g": "36.99",
+                    "vg": "centos"
+                },
+                "swap": {
+                    "size_g": "2.00",
+                    "vg": "centos"
+                }
+            },
+            "pvs": {
+                "/dev/sda2": {
+                    "free_g": "0",
+                    "size_g": "19.00",
+                    "vg": "centos"
+                },
+                "/dev/sda3": {
+                    "free_g": "0",
+                    "size_g": "20.00",
+                    "vg": "centos"
+                }
+            },
+            "vgs": {
+                "centos": {
+                    "free_g": "0",
+                    "num_lvs": "2",
+                    "num_pvs": "2",
+                    "size_g": "38.99"
+                }
+            }
+        },
+        "ansible_machine": "x86_64",
+        "ansible_machine_id": "2edc4ccee21642d18122183715d6e227",
+        "ansible_memfree_mb": 2758,
+        "ansible_memory_mb": {
+            "nocache": {
+                "free": 3067,
+                "used": 706
+            },
+            "real": {
+                "free": 2758,
+                "total": 3773,
+                "used": 1015
+            },
+            "swap": {
+                "cached": 0,
+                "free": 2047,
+                "total": 2047,
+                "used": 0
+            }
+        },
+        "ansible_memtotal_mb": 3773,
+        "ansible_mounts": [
+            {
+                "block_available": 223271,
+                "block_size": 4096,
+                "block_total": 259584,
+                "block_used": 36313,
+                "device": "/dev/sda1",
+                "fstype": "xfs",
+                "inode_available": 523961,
+                "inode_total": 524288,
+                "inode_used": 327,
+                "mount": "/boot",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 914518016,
+                "size_total": 1063256064,
+                "uuid": "cdea19ea-b907-44c8-a488-5b5a05ddebde"
+            },
+            {
+                "block_available": 5486286,
+                "block_size": 4096,
+                "block_total": 9694720,
+                "block_used": 4208434,
+                "device": "/dev/mapper/centos-root",
+                "fstype": "xfs",
+                "inode_available": 19058829,
+                "inode_total": 19394560,
+                "inode_used": 335731,
+                "mount": "/",
+                "options": "rw,seclabel,relatime,attr2,inode64,noquota",
+                "size_available": 22471827456,
+                "size_total": 39709573120,
+                "uuid": "b884f87b-27e4-4a41-8e1e-6dbebdd4359f"
+            }
+        ],
+        "ansible_nodename": "vm1",
+        "ansible_processor": [
+            "0",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz",
+            "1",
+            "GenuineIntel",
+            "Intel(R) Core(TM) i7-8750H CPU @ 2.20GHz"
+        ],
+        "ansible_processor_cores": 1,
+        "ansible_processor_count": 2,
+        "ansible_processor_threads_per_core": 1,
+        "ansible_processor_vcpus": 2,
+        "ansible_product_name": "VMware Virtual Platform",
+        "ansible_product_serial": "VMware-56 4d db 6d ef e4 cc 83-7d f6 68 ea 0f ac a3 3a",
+        "ansible_product_uuid": "6DDB4D56-E4EF-83CC-7DF6-68EA0FACA33A",
+        "ansible_product_version": "None",
+        "ansible_python_version": "2.7.5",
+        "ansible_swapfree_mb": 2047,
+        "ansible_swaptotal_mb": 2047,
+        "ansible_system": "Linux",
+        "ansible_system_vendor": "VMware, Inc.",
+        "ansible_uptime_seconds": 6574,
+        "ansible_userspace_architecture": "x86_64",
+        "ansible_userspace_bits": "64",
+        "discovered_interpreter_python": "/usr/bin/python",
+        "gather_subset": [
+            "!all",
+            "!min",
+            "hardware"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}

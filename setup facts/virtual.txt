@@ -1,0 +1,14 @@
+vm1 | SUCCESS => {
+    "ansible_facts": {
+        "ansible_virtualization_role": "guest",
+        "ansible_virtualization_type": "VMware",
+        "discovered_interpreter_python": "/usr/bin/python",
+        "gather_subset": [
+            "!all",
+            "!min",
+            "virtual"
+        ],
+        "module_setup": true
+    },
+    "changed": false
+}
